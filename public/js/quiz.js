@@ -63,16 +63,22 @@ var tracker;
  * timer
  */
 
+function outOfTime() {
+  alert('Sorry you are out of time!!!, please take the test again');
+  quiz.storage.del('cert-tracker');
+  quiz.storage.del('cert-timer');
+
+}
+
 function startTimer(duration, display) {
   var timer = duration, minutes, seconds;
   if (quiz.storage.get('cert-timer')) {
     duration = parseInt(quiz.storage.get('cert-timer').minutes) * 60 + parseInt(quiz.storage.get('cert-timer').seconds);
-    //seconds = parseInt(quiz.storage.get('cert-timer').seconds);
 
     timer = duration, minutes, seconds;
 
   }
-  setInterval(function () {
+  var interval = setInterval(function () {
 
     minutes = parseInt(timer / 60, 10);
     seconds = parseInt(timer % 60, 10);
@@ -90,9 +96,14 @@ function startTimer(duration, display) {
       timer = duration;
     }
 
+    if (timer === 0) {
+      clearInterval(interval);
+      outOfTime();
+    }
 
 
-  }, 1000);
+
+  }, 1);
 }
 
 window.onload = function () {
