@@ -2,19 +2,25 @@
 
 quiz.certification = function() {
 
-  var tracker = {
-    currentQuestion: 1,
-    usersAnswer: 0,
-    currentAnswer: 1,
-    answers: []
-  };
+var tracker;
+
+  if (quiz.storage.get('cert-tracker')) {
+    tracker = quiz.storage.get('cert-tracker');
+  } else {
+    tracker = {
+      currentQuestion: 1,
+      usersAnswer: 0,
+      currentAnswer: 1,
+      answers: []
+    };
+  }
+
 
   var answerOptions = document.querySelectorAll('.answerOptions input');
   var answerLables = document.querySelectorAll('.answerOptions label');
   var nextQuestion = document.querySelector('.button');
   var questionNumber = document.querySelector('#questionNumber');
   var question = document.querySelector('.question');
-
 
   quiz.storage.set('cert-tracker', tracker);
 
@@ -24,21 +30,16 @@ quiz.certification = function() {
     // apply question
     question.innerHTML = quiz.questions[tracker.currentQuestion-1].q
 
-
     //quiz.answers
-
     for (i = 0; i < 4; ++i) {
-
       answerLables[i].innerHTML = quiz.answers[tracker.currentQuestion-1].ans[i];
     }
   }
 
   for (i = 0; i < answerOptions.length; ++i) {
-
     answerOptions[i].addEventListener("click", function(e) {
       tracker.currentAnswer = this.id.split("q").pop();
       quiz.storage.set('cert-tracker', tracker);
-      console.log("Nope.");
     });
   }
 
@@ -64,7 +65,15 @@ quiz.certification = function() {
 
 function startTimer(duration, display) {
   var timer = duration, minutes, seconds;
+  if (quiz.storage.get('cert-timer')) {
+    duration = parseInt(quiz.storage.get('cert-timer').minutes) * 60 + parseInt(quiz.storage.get('cert-timer').seconds);
+    //seconds = parseInt(quiz.storage.get('cert-timer').seconds);
+
+    timer = duration, minutes, seconds;
+
+  }
   setInterval(function () {
+
     minutes = parseInt(timer / 60, 10);
     seconds = parseInt(timer % 60, 10);
 
