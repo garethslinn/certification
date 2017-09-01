@@ -19,7 +19,10 @@ quiz.certification = function() {
   quiz.storage.set('cert-tracker', tracker);
 
   function getNext() {
+    // apply current question number
     questionNumber.innerHTML = tracker.currentQuestion;
+    // apply question
+    question.innerHTML = quiz.questions[tracker.currentQuestion-1].q
   }
 
   for (i = 0; i < answerOptions.length; ++i) {
@@ -43,7 +46,7 @@ quiz.certification = function() {
     getNext();
 
   });
-
+  getNext();
 };
 
 
@@ -79,10 +82,10 @@ window.onload = function () {
   var mins = 60 * 45,
     display = document.querySelector('#time');
   startTimer(mins, display);
-  document.querySelector('.max').insertAdjacentHTML('afterbegin',answers[0].id);
-
+  document.querySelector('.max').insertAdjacentHTML('afterbegin',quiz.answers[0].id);
+  quiz.certification();
 };
 
-quiz.certification();
+
 
 
