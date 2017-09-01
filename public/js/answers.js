@@ -7,15 +7,17 @@ quiz.answers = [
       'Backend is related to client side technologies such as Javascript and frontend is related to servers and server side languages',
       'Backend and Frontend are more or less the same just as Java ans Javascript are virtually the same'
     ],
+  },
+  {
     id: 2,
     ans: [
       'Cascading Style Sheets',
       'Causating Style Sheets',
       'Computer Style Sheets',
-      'Castrating Style Sheets',
-      'Collective Style Sheets',
-      'Complete Style Sheets'
+      'Castrating Style Sheets'
     ],
+  },
+  {
     id: 3,
     ans: [
       'A script based programming language',
@@ -23,22 +25,26 @@ quiz.answers = [
       'A script based language for photoshop',
       'A script based language for creating style sheets'
     ],
+  },
+  {
     id: 4,
     ans: [
       'JavaScript framework',
       'Native Javascript',
       'Script language',
       'Script that uses angular brackets',
-      'Google scripting tool'
     ],
+  },
+  {
     id: 5,
     ans: [
       'Server side programming language',
       'Client side programming language',
       'A schema',
-      'An validation guage',
       'An ng directive'
     ],
+  },
+  {
     id: 6,
     ans: [
       'A set of standards which aid people with disabilities to use the web',
@@ -46,6 +52,8 @@ quiz.answers = [
       'A mark up language to aid people with disabilities',
       'A set of guidelines to help people with disabilites write code'
     ],
+  },
+  {
     id: 7,
     ans: [
       'Hyper Text Markup Language',
@@ -53,6 +61,8 @@ quiz.answers = [
       'Hoisted Terminal Made Lines',
       'Harmonzide Tracked Machine Lingo'
     ],
+  },
+  {
     id: 8,
     ans: [
       'Internet Terminology',
@@ -60,6 +70,8 @@ quiz.answers = [
       'Information Technology',
       'Internet Technology'
     ],
+  },
+  {
     id: 9,
     ans: [
       'Structured Query Language',
@@ -67,6 +79,8 @@ quiz.answers = [
       'Structured Query Limitation',
       'Simulated Query Language'
     ],
+  },
+  {
     id: 10,
     ans: [
       'SQL is used mainly in banks and large financial organisation to ensure database security',
@@ -74,6 +88,8 @@ quiz.answers = [
       'A database management tool used to query the level of data used at any one time',
       'A standard computer language for relational database management and data manipulation. SQL is used to query, insert, update and modify data.'
     ],
+  },
+  {
     id: 11,
     ans: [
       'An unstructured set of data held in a computer, especially one that is accessible in various ways',
@@ -81,6 +97,8 @@ quiz.answers = [
       'A old type of technology no longer required',
       'A type of server used by Oracle'
     ],
+  },
+  {
     id: 12,
     ans: [
       'SASS is core CSS whilst LESS is a cut down version',
@@ -88,6 +106,8 @@ quiz.answers = [
       'A javascript framework to aid rapid web development',
       'A plug-in for web developers you validate CSS'
     ],
+  },
+  {
     id: 13,
     ans: [
       'A development approach that responds to the users behavior and environment based on screen size, platform and orientation',
@@ -95,6 +115,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 14,
     ans: [
       '',
@@ -102,6 +124,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 15,
     ans: [
       '',
@@ -109,6 +133,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 16,
     ans: [
       '',
@@ -116,6 +142,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 17,
     ans: [
       '',
@@ -123,6 +151,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 18,
     ans: [
       '',
@@ -130,6 +160,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 19,
     ans: [
       '',
@@ -137,6 +169,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 20,
     ans: [
       '',
@@ -144,6 +178,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 21,
     ans: [
       '',
@@ -151,6 +187,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 22,
     ans: [
       '',
@@ -158,6 +196,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 23,
     ans: [
       '',
@@ -165,6 +205,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 24,
     ans: [
       '',
@@ -172,6 +214,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 25,
     ans: [
       '',
@@ -179,6 +223,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 26,
     ans: [
       '',
@@ -186,6 +232,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 27,
     ans: [
       '',
@@ -193,6 +241,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 28,
     ans: [
       '',
@@ -200,6 +250,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 29,
     ans: [
       '',
@@ -207,6 +259,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 30,
     ans: [
       '',
@@ -214,6 +268,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 31,
     ans: [
       '',
@@ -221,6 +277,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 32,
     ans: [
       '',
@@ -228,6 +286,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 33,
     ans: [
       '',
@@ -235,6 +295,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 34,
     ans: [
       '',
@@ -242,6 +304,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 35,
     ans: [
       '',
@@ -249,6 +313,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 36,
     ans: [
       '',
@@ -256,6 +322,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 37,
     ans: [
       '',
@@ -263,6 +331,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 38,
     ans: [
       '',
@@ -270,6 +340,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 39,
     ans: [
       '',
@@ -277,6 +349,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 40,
     ans: [
       '',
@@ -284,6 +358,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 41,
     ans: [
       '',
@@ -291,6 +367,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 42,
     ans: [
       '',
@@ -298,6 +376,8 @@ quiz.answers = [
       '',
       ''
     ],
+  },
+  {
     id: 43,
     ans: [
       '',

@@ -8,15 +8,12 @@
         <link rel="stylesheet" href="css/foundation.css">
         <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" href="css/main.css">
-
-
-
     </head>
     <body>
 
     <div class="quiz">
 
-        <h1>Title</h1>
+        <h1>Technical Recruitment Certification</h1>
 
         <div class="quiz-container">
             <div class="questionCount">Question <span id="questionNumber">1</span> of <span class="max"></span> <span id="time" class="timer"></span></div>

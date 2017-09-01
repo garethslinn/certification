@@ -23,6 +23,14 @@ quiz.certification = function() {
     questionNumber.innerHTML = tracker.currentQuestion;
     // apply question
     question.innerHTML = quiz.questions[tracker.currentQuestion-1].q
+
+
+    //quiz.answers
+
+    for (i = 0; i < 4; ++i) {
+
+      answerLables[i].innerHTML = quiz.answers[tracker.currentQuestion-1].ans[i];
+    }
   }
 
   for (i = 0; i < answerOptions.length; ++i) {
@@ -82,7 +90,7 @@ window.onload = function () {
   var mins = 60 * 45,
     display = document.querySelector('#time');
   startTimer(mins, display);
-  document.querySelector('.max').insertAdjacentHTML('afterbegin',quiz.answers[0].id);
+  document.querySelector('.max').insertAdjacentHTML('afterbegin',quiz.answers.length);
   quiz.certification();
 };
 
